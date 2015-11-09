@@ -9,8 +9,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class MyService2 extends Service {
-    public MyService2() {
+public class MyServices extends Service {
+    public MyServices() {
     }
 
     final String LOG_TAG = "myLogs";

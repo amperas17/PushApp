@@ -205,16 +205,16 @@ public class MainActivity extends AppCompatActivity {
 
         // Создаем Intent для вызова сервиса,
         // кладем туда параметр времени и код задачи
-        intent = new Intent(this, MyService2.class).putExtra(PARAM_TIME, 7)
+        intent = new Intent(this, MyServices.class).putExtra(PARAM_TIME, 7)
                 .putExtra(PARAM_TASK, TASK1_CODE);
         // стартуем сервис
         startService(intent);
 
-        intent = new Intent(this, MyService2.class).putExtra(PARAM_TIME, 4)
+        intent = new Intent(this, MyServices.class).putExtra(PARAM_TIME, 4)
                 .putExtra(PARAM_TASK, TASK2_CODE);
         startService(intent);
 
-        intent = new Intent(this, MyService2.class).putExtra(PARAM_TIME, 6)
+        intent = new Intent(this, MyServices.class).putExtra(PARAM_TIME, 6)
                 .putExtra(PARAM_TASK, TASK3_CODE);
         startService(intent);
     }
