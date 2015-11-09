@@ -64,6 +64,41 @@
         android:indeterminate="true"
         android:layout_below="@+id/btCall"
         android:layout_toRightOf="@+id/btStopService"
+        android:visibility="invisible"
         />
+
+    <TextView
+        android:id="@+id/tvTask1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Task1"
+        android:textSize="24sp"
+        android:layout_below="@+id/btStartService"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/tvTask2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Task2"
+        android:textSize="24sp"
+        android:layout_below="@+id/tvTask1">
+    </TextView>
+    <TextView
+        android:id="@+id/tvTask3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Task3"
+        android:textSize="24sp"
+        android:layout_below="@+id/tvTask2">
+    </TextView>
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickStartServices"
+        android:text="Start services"
+        android:layout_below="@+id/tvTask3">
+    </Button>
 
 </RelativeLayout>
