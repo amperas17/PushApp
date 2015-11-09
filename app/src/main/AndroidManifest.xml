@@ -20,25 +20,9 @@
             </intent-filter>
         </activity>
 
-        <receiver
-            android:name=".MessageReceiver"
-            android:enabled="true"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="com.vavan.broadcast" />
-            </intent-filter>
-        </receiver>
 
-        <service
-            android:name=".MyService"
-            android:enabled="true"
-            android:exported="true" >
-        </service>
-        <service
-            android:name=".MyServices"
-            android:enabled="true"
-            android:exported="true" >
-        </service>
+
+
     </application>
 
 </manifest>
